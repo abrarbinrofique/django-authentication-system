@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<h2 class="text-center"> This is profile page</h2> 
+
+<div class="m-5">
+
+    <a href="{% url 'oldpass' %}" class="btn btn-outline-warning  text-dark" type="submit" > change password using old password </a>
+    <a href="{% url 'newpass' %}" class="btn btn-outline-danger text-dark" type="submit" > change password without old password </a>
+
+</div>
+{% endblock %}
